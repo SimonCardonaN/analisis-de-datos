@@ -1,7 +1,7 @@
 import pandas as pd 
 import matplotlib.pyplot as plt
 import seaborn as sns 
-df=pd.read_csv("usuarios_app_limpieza.csv")
+df=pd.read_csv("clase/usuarios_app_limpieza.csv")
 #limpieza de edad 
 df.drop_duplicates()
 df=df.dropna(subset=['edad'])
