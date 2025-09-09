@@ -3,7 +3,7 @@ import numpy as np
 import re as er
 
 # 1) Leer el archivo
-df = pd.read_csv("usuarios_app_clase2.csv", encoding="utf-8")
+df = pd.read_csv(r"clase 2\usuarios_app_clase2.csv", encoding="utf-8")
 
 # Normalizar columnas
 df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_", regex=False)
